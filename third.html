@@ -1,0 +1,24 @@
+<body>
+  <script>
+const hero = {
+  
+  hp:100,
+  exp:80,
+  sword:12,
+  magic:20,
+  
+  attack_sword: () => {
+    return this.sword * ( this.exp / 100 );
+  },
+
+  attack_magic: () => {
+    return this.magic * ( this.exp / 100 );
+  }
+  
+}
+
+console.log(hero);
+console.log(hero.attack_magic);
+
+  </script>
+</body>

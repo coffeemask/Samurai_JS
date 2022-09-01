@@ -1,0 +1,18 @@
+<body>
+  <script>
+    while (true) {
+    //ドルを入力する
+    const dollar = prompt('ドルを円に換算します');
+    
+    //ドルを円に換える
+    const getDollortoYen = (number) => {
+        return number * 108;
+      }    
+
+    //結果を出力する
+    if (dollar) {
+      console.log( getDollortoYen(dollar) + '円です');
+    } else break;
+    }
+  </script>
+</body>

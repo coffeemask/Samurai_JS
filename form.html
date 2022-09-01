@@ -1,0 +1,32 @@
+<body>
+  <form name="myForm">
+    名前：<input type="text" name="fullname"><br>
+    メールアドレス：<input type="text" name="email"><br>
+    年齢：<input type="radio" name="age" value="20s" />20代
+    <input type="radio" name="age" value="30" />30代
+    <input type="radio" name="age" value="40" />40代
+    <input type="radio" name="age" value="50" />50代<br>
+    <label>普段使っているスマホは？</label><br/>
+    <input type="checkbox" name="os" value="iPhone" />iPhone
+    <input type="checkbox" name="os" value="Android" />Android
+    <input type="checkbox" name="os" value="ガラケー" />ガラケー
+    <input type="checkbox" name="os" value="その他" />その他
+  </form>
+
+  <button id="btn">実行</button>
+
+  <script>
+      const btn = document.getElementById('btn');
+
+      btn.addEventListener('click', () => {
+      const form = document.forms.myForm;
+      console.log(form.fullname.value); //名前を出力
+      console.log(form.email.value); //メールアドレスを出力
+      console.log(form.age.value); //年齢を出力
+      form.os.forEach(item => {
+        if(item.checked) console.log(item.value);
+      })
+
+            })
+  </script>
+</body>

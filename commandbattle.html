@@ -1,0 +1,30 @@
+<body>
+  <script>
+
+    let command = prompt('敵が現れた！ ( 【1】攻撃 【2】逃げる)');
+
+      while(prompt === 1) {
+
+        //敵の体力を10とする
+        let enemy = 10
+
+        //0-9の攻撃力を持つ乱数を作成する
+        let random = Math.floor(Math.random() * 10 );
+
+        for ( let i = 10; i <=10 ; i = enemy-random){
+          if (i = 0 ) {
+            console.log( i + "の攻撃！");
+            console.log("敵を倒した！");
+
+          } else if (i <= 10) {
+            console.log( i + "の攻撃！");
+            console.log("敵の体力は残り" + i + "です");
+          }
+        }
+
+      }
+    
+
+
+  </script>
+</body>
